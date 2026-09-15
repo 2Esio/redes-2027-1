@@ -40,23 +40,7 @@ printf 'hola\n' | ./bit_flip
 ```
 
 
-## Archivos
 
-```text
-practica1/
-├── bit_flip.c                   Programa en C, comentado línea por línea
-├── RESULTADOS.md                Investigación, resultados y conclusiones
-├── evidencias/
-│   └── ejecucion-hola.txt        Salida real del programa en Kali
-└── protoboard/
-    ├── README.md                Montaje y pasos para simular
-    ├── directo/
-    │   ├── sketch.ino           Barrido de los ocho conductores
-    │   └── diagram.json         Cable directo y componentes
-    └── cruzado/
-        ├── sketch.ino           El mismo barrido, sin cambiar el orden
-        └── diagram.json         Cable cruzado y componentes
-```
 
 ## Qué hace el programa
 
