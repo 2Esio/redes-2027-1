@@ -39,15 +39,6 @@ Escribir una palabra, por ejemplo `hola`, y presionar Enter. También se puede e
 printf 'hola\n' | ./bit_flip
 ```
 
-En el servidor utilizado para la práctica, la carpeta de trabajo es:
-
-```bash
-cd ~/Documents/Ciencias/2027-1/Redes/practica1
-gcc -std=c11 -Wall -Wextra -Wpedantic bit_flip.c -o bit_flip
-./bit_flip
-```
-
-No hace falta entrar al servidor para revisar la práctica: cualquier computadora con GCC puede compilar el programa después de clonar el repositorio.
 
 ## Archivos
 
