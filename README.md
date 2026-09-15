@@ -4,15 +4,10 @@
 
 Práctica 1: capa física, emulación de un bit-flip en **C** y probador de cable RJ-45 en protoboard digital.
 
-## Acceso para el ayudante
-
-Repositorio público: **https://github.com/2Esio/redes-2027-1**
-
-Se puede consultar y clonar sin cuenta de GitHub ni contraseñas. El programa de consola usa únicamente la biblioteca estándar de C.
 
 ### 1. Instalar las herramientas
 
-En Kali, Debian o Ubuntu, si todavía no están instaladas:
+En linux si todavía no están instaladas:
 
 ```bash
 sudo apt update
