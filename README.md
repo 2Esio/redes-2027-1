@@ -73,34 +73,8 @@ Un bit-flip puede producir un byte cero, un carácter de control o un valor mayo
 
 Los voltajes son una representación impresa del modelo NRZ de la práctica: el programa de C no genera voltajes en una interfaz de red ni transmite paquetes.
 
-## Ejemplo real y validación
-
-En la ejecución conservada en [ejecucion-hola.txt](practica1/evidencias/ejecucion-hola.txt), el resultado fue:
-
-```text
-Texto transmitido: hola
-Bit alterado: 3 de 32 (byte 1, peso 32)
-Texto recibido: Hola
-Bits alterados: 1 de 32
-```
-
-La posición y el texto recibido pueden cambiar en otra ejecución. Lo que debe mantenerse es que cambie **exactamente un bit**.
-
-Se compiló en Kali con `-std=c11 -Wall -Wextra -Wpedantic -Werror`. Se verificaron seis entradas válidas, incluida una palabra de cien caracteres, y siete casos inválidos, incluido el fin de entrada. En cada entrada válida se compararon los bits, los valores de los bytes, la posición anunciada y los voltajes. Las 67 líneas del archivo C tienen comentarios.
 
 ## Protoboard digital
 
-**Simulaciones listas para abrir:** [cable directo](https://wokwi.com/projects/475205082762594305) · [cable cruzado](https://wokwi.com/projects/475205144008883201). Pulsar el botón verde para iniciar.
+**Simulaciones :** [cable directo](https://wokwi.com/projects/475205082762594305) · [cable cruzado](https://wokwi.com/projects/475205144008883201). 
 
-Los dos circuitos editables están en [practica1/protoboard](practica1/protoboard/README.md). Se simulan en **Wokwi**, una de las alternativas permitidas por la práctica. El programa principal solicitado está escrito en C; el pequeño `sketch.ino` usa la API de Arduino para generar el barrido del circuito.
-
-| Cable | Orden de TX | Orden esperado de los LEDs RX |
-|---|---|---|
-| Directo, T568B–T568B | 1, 2, 3, 4, 5, 6, 7, 8 | 1, 2, 3, 4, 5, 6, 7, 8 |
-| Cruzado, T568B–T568A | 1, 2, 3, 4, 5, 6, 7, 8 | 3, 6, 1, 4, 5, 2, 7, 8 |
-
-La secuencia transmitida es igual en ambos casos. El cambio de orden aparece por las conexiones del cable virtual.
-
-## Resultados, conclusiones y referencias
-
-Consultar [RESULTADOS.md](practica1/RESULTADOS.md). La práctica separa dos ideas: una alteración del valor de un bit y el mapeo físico de los conductores de un cable.
