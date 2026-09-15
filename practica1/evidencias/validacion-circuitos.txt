@@ -1,0 +1,6 @@
+directo: TX 1 2 3 4 5 6 7 8 -> RX 1 2 3 4 5 6 7 8
+OK: un receptor por salida; ocho resistencias en serie; retorno GND y analizador conectados.
+cruzado: TX 1 2 3 4 5 6 7 8 -> RX 3 6 1 4 5 2 7 8
+OK: un receptor por salida; ocho resistencias en serie; retorno GND y analizador conectados.
+OK: sketches identicos en ambos circuitos.
+Esta es una comprobacion estructural del cableado JSON. La ejecucion visual se realizo por separado en Wokwi.

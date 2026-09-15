@@ -1,0 +1,5 @@
+practica1/bit_flip
+*.o
+*.elf
+*.hex
+__pycache__/

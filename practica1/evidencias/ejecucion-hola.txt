@@ -1,0 +1,35 @@
+Introduce una palabra ASCII de 1 a 100 caracteres, sin espacios: 
+Texto transmitido: hola
+
+ORIGINAL
+Byte 1 (104)
+Bits: 01101000
+Senal: [ -5V ] [ +5V ] [ +5V ] [ -5V ] [ +5V ] [ -5V ] [ -5V ] [ -5V ] 
+Byte 2 (111)
+Bits: 01101111
+Senal: [ -5V ] [ +5V ] [ +5V ] [ -5V ] [ +5V ] [ +5V ] [ +5V ] [ +5V ] 
+Byte 3 (108)
+Bits: 01101100
+Senal: [ -5V ] [ +5V ] [ +5V ] [ -5V ] [ +5V ] [ +5V ] [ -5V ] [ -5V ] 
+Byte 4 (97)
+Bits: 01100001
+Senal: [ -5V ] [ +5V ] [ +5V ] [ -5V ] [ -5V ] [ -5V ] [ -5V ] [ +5V ] 
+
+Bit alterado: 3 de 32 (byte 1, peso 32)
+
+RECIBIDO
+Byte 1 (72)
+Bits: 01001000
+Senal: [ -5V ] [ +5V ] [ -5V ] [ -5V ] [ +5V ] [ -5V ] [ -5V ] [ -5V ] 
+Byte 2 (111)
+Bits: 01101111
+Senal: [ -5V ] [ +5V ] [ +5V ] [ -5V ] [ +5V ] [ +5V ] [ +5V ] [ +5V ] 
+Byte 3 (108)
+Bits: 01101100
+Senal: [ -5V ] [ +5V ] [ +5V ] [ -5V ] [ +5V ] [ +5V ] [ -5V ] [ -5V ] 
+Byte 4 (97)
+Bits: 01100001
+Senal: [ -5V ] [ +5V ] [ +5V ] [ -5V ] [ -5V ] [ -5V ] [ -5V ] [ +5V ] 
+
+Texto recibido: Hola
+Bits alterados: 1 de 32
